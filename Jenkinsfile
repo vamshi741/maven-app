@@ -14,6 +14,11 @@ node{
     }    
         stage('Package'){
         sh "${mvnHome}/bin/mvn  package"
-    }    
+    }   
+        stage('Email Notification'){
+        mail bcc: '', body: '''Build successful!!!!
+        Thanks,
+        Vikas''', cc: '', from: '', replyTo: '', subject: 'Build successfull', to: 'bgunny88@gmail.com'
+}    
 
 }
