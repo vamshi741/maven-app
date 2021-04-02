@@ -6,7 +6,7 @@ node {
         echo " I am in test stage"
     }
     stage('Deploy') { 
-        echo  " I am in deploy stage"
+        echo  " I am working on  deploy stage"
     }
     stage('Archive') { 
         echo  " Working on archive stage"
